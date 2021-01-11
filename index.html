@@ -1,91 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+  </head>
+  <body>
     <form action="results.html" method="GET" enctype="multipart/form-data">
       <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" >
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" >
-    </div>
-    <div>
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" min="1" max="200" step="5">
-    </div>
-    <div>
-      <label for="date">Birthdate</label>
-      <input type="date" name="date" id="date" min="2019-06-10">
-    </div>
-    <div>
-      Favorite Food
-      <div>
-        <label for="banana">Banana</label>
-        <input type="checkbox" name="banana" id="banana">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
       </div>
       <div>
-        <label for="apple">Apple</label>
-        <input type="checkbox" name="apple" id="apple">
-      </div>
-    </div>
-    <div>
-      Gender
-      <div>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" />
       </div>
       <div>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url" />
       </div>
       <div>
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="other" value="other">
+        <label for="age">Comments</label>
+        <textarea type="textarea" placeholder="comments" name="comments" id="comments" min="20" max="500" step="5" cols="30" rows="5"></textarea>
+      </div><br />
+      <div>
+        <label class="title" for="date">How did you hear about me?</label><br />
+        <label for="classmate">Classmate</label>
+        <input type="checkbox" value="Classmate" /><br />
+        <label for="Resume Submission">Resume Submission</label>
+        <input type="checkbox" value="Resume Submission" /><br />
+        <label for="classmate">LinkedIn</label>
+        <input type="checkbox" value="LinkedIn" /><br />
+        <label for="classmate">Coding Academy Rec</label>
+        <input type="checkbox" value="Coding Academy Rec" />
       </div>
-    </div>
-    <div>
-      <label for="eyeColor">Eye Color</label>
-      <select name="eyeColor" id="eyeColor" multiple>
-        <option value="Green">Green</option>
-        <option label="Red" value="Red"></option>
-      </select>
-    </div>
-    <div>
-      <label for="bio">Bio</label>
-      <textarea id="bio" name="bio"></textarea>
-    </div>
-    <input type="hidden" name="hidden" value="hi">
-    <div>
-      <label for="file">File</label>
-      <input id="file" type="file" name="file">
-    </div>
-    <div>
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" id="phone">
-    </div>
-    <div>
-      <label for="url">URL</label>
-      <input type="url" name="url" id="url">
-    </div>
-    <div>
-      <label for="color">Color</label>
-      <input type="color" name="color" id="color">
-    </div>
-    <div>
-      <label>
-        Password
-        <input type="password" name="password" >
-      </label>
-    </div>
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
-  </form>
-  <!-- <script src="scripts.js"></script> -->
-</body>
+      <br />
+      <div>
+        <span class="title">Would you like to be contacted back?</span>
+        <div>
+          <label for="yes">Yes</label>
+          <input type="radio" name="contact" id="yes" value="yes" />
+        </div>
+        <div>
+          <label for="no">No</label>
+          <input type="radio" name="contact" id="female" value="female" />
+        </div>
+      </div>
+      <br />
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- <script src="scripts.js"></script> -->
+  </body>
 </html>
